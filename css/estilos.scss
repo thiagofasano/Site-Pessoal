@@ -1,0 +1,70 @@
+$cor-secundaria: #00604d;
+$cor-padrao: #58d6bd;
+@mixin image-replacement {
+	text-indent: -99999px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	background: $cor-padrao;
+	color: $cor-secundaria;
+}
+
+p {
+	margin: 5px 0;
+	line-height: 26px;
+}
+
+small { 
+	font-size: 65%; 
+}
+
+
+.container {
+	width: 600px;
+	margin: 0 auto;
+}
+
+h1.logo {
+	@include image-replacement;
+	background: url(../images/logo.png);
+	width: 430px;
+	height: 135px;
+	margin: 0 auto;
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+
+#perfil {
+	text-align: center;
+
+	ul {
+		list-style: none;
+		width: 110px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	li {
+		float: left;
+		margin: 10px;
+	}
+
+	img:hover {
+		box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+	}
+	
+
+}
+
+
+
